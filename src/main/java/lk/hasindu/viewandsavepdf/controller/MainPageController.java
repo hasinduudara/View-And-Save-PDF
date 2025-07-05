@@ -55,7 +55,7 @@ public class MainPageController {
 
                 document.close();
 
-//              System.out.println("PDF saved successfully.");
+                System.out.println("PDF saved successfully.");
 
                 // Show success notification
                 javafx.scene.control.Alert alert = new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.INFORMATION);
