@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane fx:id="mainPage" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.hasindu.viewandsavepdf.controller.MainPageController">
+   <children>
+      <Label layoutX="270.0" layoutY="21.0" text="Send Mail">
+         <font>
+            <Font name="System Bold" size="12.800000190734863" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="58.0" text="Title :">
+         <font>
+            <Font name="System Bold" size="12.8" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMailTitle" layoutX="97.0" layoutY="54.0" prefHeight="27.0" prefWidth="464.0" promptText="Mail Title" />
+      <Label layoutX="38.0" layoutY="102.0" text="Description :">
+         <font>
+            <Font name="System Bold" size="12.8" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtMailDescription" layoutX="38.0" layoutY="133.0" prefHeight="200.0" prefWidth="523.0" promptText="Mail Description" />
+      <Button fx:id="btnPreview" layoutX="401.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnPreviewOnAction" text="Preview">
+         <font>
+            <Font name="System Bold" size="12.8" />
+         </font>
+      </Button>
+      <Button fx:id="btnSavePDF" layoutX="487.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnSavePDFOnAction" text="Save PDF">
+         <font>
+            <Font name="System Bold" size="12.8" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
