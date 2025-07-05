@@ -10,9 +10,6 @@ import javafx.scene.layout.AnchorPane;
 public class MainPageController {
 
     @FXML
-    private Button btnPreview;
-
-    @FXML
     private Button btnSavePDF;
 
     @FXML
@@ -23,11 +20,6 @@ public class MainPageController {
 
     @FXML
     private TextField txtMailTitle;
-
-    @FXML
-    void btnPreviewOnAction(ActionEvent event) {
-
-    }
 
     @FXML
     void btnSavePDFOnAction(ActionEvent event) {
