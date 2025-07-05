@@ -5,4 +5,5 @@ module lk.hasindu.viewandsavepdf {
 
     opens lk.hasindu.viewandsavepdf to javafx.fxml;
     exports lk.hasindu.viewandsavepdf;
+    opens lk.hasindu.viewandsavepdf.controller to javafx.fxml;
 }
